@@ -1,17 +1,17 @@
 # Weird Number Checker
 
-تمرین گرفته‌شده از سایت [HackerRank](https://www.hackerrank.com/) — بخش Python (Basic).
+Exercise from [HackerRank](https://www.hackerrank.com/) — Python (Basic) section.
 
-## توضیح مسئله
+## Problem Statement
 
-یک عدد صحیح `n` از ورودی گرفته می‌شود و بر اساس شرایط زیر خروجی چاپ می‌شود:
+Given an integer `n`, perform the following conditional actions:
 
-- اگر `n` **فرد** باشد → چاپ `Weird`
-- اگر `n` **زوج** باشد و در بازه‌ی `2` تا `5` باشد → چاپ `Not Weird`
-- اگر `n` **زوج** باشد و در بازه‌ی `6` تا `20` باشد → چاپ `Weird`
-- اگر `n` **زوج** باشد و بزرگ‌تر از `20` باشد → چاپ `Not Weird`
+- If `n` is **odd**, print `Weird`
+- If `n` is **even** and in the inclusive range of `2` to `5`, print `Not Weird`
+- If `n` is **even** and in the inclusive range of `6` to `20`, print `Weird`
+- If `n` is **even** and greater than `20`, print `Not Weird`
 
-## کد راه‌حل
+## Solution Code
 
 ```python
 n = int(input())
@@ -26,24 +26,24 @@ else:
     print("Not Weird")
 ```
 
-## نحوه‌ی اجرا
+## How to Run
 
 ```bash
 python weird.py
 ```
 
-سپس یک عدد صحیح وارد کنید تا خروجی چاپ شود.
+Then enter an integer to see the output.
 
-## نمونه ورودی/خروجی
+## Sample Input/Output
 
-| ورودی | خروجی      | دلیل                          |
-|-------|------------|-------------------------------|
-| 3     | Weird      | فرد است                       |
-| 4     | Not Weird  | زوج و بین 2 تا 5              |
-| 10    | Weird      | زوج و بین 6 تا 20             |
-| 26    | Not Weird  | زوج و بزرگ‌تر از 20           |
+| Input | Output     | Reason                        |
+|-------|------------|--------------------------------|
+| 3     | Weird      | It's odd                       |
+| 4     | Not Weird  | Even and between 2 and 5       |
+| 10    | Weird      | Even and between 6 and 20      |
+| 26    | Not Weird  | Even and greater than 20       |
 
-## نکات
+## Notes
 
-- به جای چهار حالت `if/elif`، حالت آخر بهتر است با `else` نوشته شود (چون قبلاً همه‌ی حالت‌های دیگر پوشش داده شده‌اند).
-- عملگر `%` برای بررسی زوج/فرد بودن استفاده می‌شود، نه `/`.
+- Instead of four `if/elif` branches, the last case is better written with `else` (since all other cases are already covered).
+- Use the `%` operator to check even/odd, not `/`.
