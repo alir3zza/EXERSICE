@@ -1,4 +1,5 @@
-
+#2026/9/8
+#Problem 1: Weird or Not Weird
 
 #n = int (input())
 
@@ -21,8 +22,8 @@
 
 
 #---------------------------------------------
-
-
+#2026/9/8
+#Problem 2: Sum, Difference, and Product
 
 '''
 a = int(input())
@@ -43,6 +44,9 @@ print (h)
 '''
 
 #------------
+
+#2026/9/8
+#Problem 3: Floor Division and Float Division
 '''
 a = int(input())
 b = int (input())
@@ -67,6 +71,11 @@ print(float)
 
 
 #-----------------------
+#2026/9/8
+#Problem 4: List of Squares
+
+
+
 '''
 n = int (input())
 
@@ -88,6 +97,8 @@ print(d)
 
 
 #-------------------
+#2026/9/8
+#Problem 5: Leap Year Check
 '''
 def is_leap(year):
     leap = False
@@ -107,17 +118,21 @@ print(is_leap(year))
 
 
 #-----------------
-
+#2026/9/9
+#Problem 6: List of Numbers
 
 n = int (input())
 
+for i in range (1,n+1):
+    print(i, end = "")
 
-d = []
-for i in range(n):
-    d = i 
-    d.append(i)
 
-print (d)
+
+
+
+        
+
+
 
 
 
