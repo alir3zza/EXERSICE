@@ -120,26 +120,76 @@ print(is_leap(year))
 #-----------------
 #2026/9/9
 #Problem 6: List of Numbers
-
+'''
 n = int (input())
 
 for i in range (1,n+1):
     print(i, end = "")
 
+'''
+
+#---------------------
+
+#2026/9/9
+#itertools.combinations(iterable, r)
+
+'''
+
+from itertools import combinations
+
+word,n = input().split()
+word = str(word)
+n = int(n)
+
+def combin (word, n):
+    for letter in sorted(word):
+            print(letter)
+    
+
+    
+    for i in range (2,n+1):
+        for d in combinations(sorted(word), i):
+
+            print("".join(d))
+
+
+    return 
 
 
 
-
-        
-
+combin(word, n)
 
 
 
+'''
 
 
+#--------------------
+2026/9/9
+#itertools.combinations_with_replacement(iterable, r)
+'''
+
+from itertools import combinations_with_replacement
+
+word,n = input().split()
+word = str(word)
+n = int(n)
+
+def combin (word, n):
 
 
     
+    for d in combinations_with_replacement(sorted(word), n ):
+
+        print("".join(d))
+
+
+    return 
 
 
 
+combin(word, n)
+
+
+
+'''
