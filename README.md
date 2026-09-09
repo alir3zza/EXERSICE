@@ -1,49 +1,49 @@
-# Weird Number Checker
+# 🐍 EXERCISE
 
-Exercise from [HackerRank](https://www.hackerrank.com/) — Python (Basic) section.
+A repository for daily Python practice, aimed at mastering the language.
 
-## Problem Statement
+---
 
-Given an integer `n`, perform the following conditional actions:
+## 📌 About this repo
 
-- If `n` is **odd**, print `Weird`
-- If `n` is **even** and in the inclusive range of `2` to `5`, print `Not Weird`
-- If `n` is **even** and in the inclusive range of `6` to `20`, print `Weird`
-- If `n` is **even** and greater than `20`, print `Not Weird`
+This repo contains the exercises and problems I work on every day to deepen my understanding of Python. The goals are:
 
-## Solution Code
+- Consistent, ongoing practice with Python 🐍
+- Mastery of concepts from basic to advanced (conditionals, loops, functions, lists, dictionaries, OOP, etc.)
+- Building a browsable archive of exercises to review later
 
-```python
-n = int(input())
+---
 
-if n % 2 != 0:
-    print("Weird")
-elif 2 <= n <= 5:
-    print("Not Weird")
-elif 6 <= n <= 20:
-    print("Weird")
-else:
-    print("Not Weird")
+## 🗂️ Folder structure
+
+```
+EXERCISE/
+├── daily-practice/
+│   ├── 2026-09-09/
+│   ├── 2026-09-10/
+│   └── ...
+└── README.md
 ```
 
-## How to Run
+- **daily-practice/** → daily Python exercises, organized by date
+
+---
+
+## ✅ Progress Log
+
+| Date | # of Exercises | Topic | Link |
+|---|---|---|---|
+| 2026-09-09 | 3 | Conditionals, functions | [View](./daily-practice/2026-09-09) |
+| 2026-09-10 | 3 | Lists, functions | [View](./daily-practice/2026-09-10) 
+
+> I add a new row to this table every day.
+
+---
+
+## 🛠️ How to run the code
 
 ```bash
-python weird.py
+python3 path/to/file.py
 ```
 
-Then enter an integer to see the output.
-
-## Sample Input/Output
-
-| Input | Output     | Reason                        |
-|-------|------------|--------------------------------|
-| 3     | Weird      | It's odd                       |
-| 4     | Not Weird  | Even and between 2 and 5       |
-| 10    | Weird      | Even and between 6 and 20      |
-| 26    | Not Weird  | Even and greater than 20       |
-
-## Notes
-
-- Instead of four `if/elif` branches, the last case is better written with `else` (since all other cases are already covered).
-- Use the `%` operator to check even/odd, not `/`.
+---
